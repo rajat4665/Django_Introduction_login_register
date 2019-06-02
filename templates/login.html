@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'navbar.html'%}
+{% block content %}
+{% load staticfiles %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css"%}"/>
+
+  </head>
+  <body style="background:url('{% static 'images/bg2.jpg'%}')">
+    <div class="container mt-5 " >
+      <div class="row my-2 mx-2 p-5"  >
+        <div class="col-md-6 bg-light mx-auto my-auto" style="border-radius:19px;">
+          <form method="post">
+            {% csrf_token %}
+
+          <br>
+          <h1 class="jumbotron"style="text-shadow:1px 10px 17px black;border-radius:19px">login here</h1>
+          <label for="">User Name</label>
+          <input type="text" name="un" value="" class="form-control">
+          <br>
+          <label for="">Password</label>
+          <input type="password" name="pwd" value="" class="form-control">
+          <input type="submit" style="margin-left:39%; margin-top:15px;margin-bottom:16px;border-radius:20%;" class="btn btn-success p-2 " value="Login"/>
+          {% if wrngpass %}
+          <script type="text/javascript">
+          alert("{{wrngpass}}");
+
+          </script>
+
+          {% endif %}
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+  {% endblock %}
+</html>

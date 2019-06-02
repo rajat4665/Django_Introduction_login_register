@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'navbar.html'%}
+{% block content %}
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+<div class="col-md-8">
+  <div class="jumbotron">
+    <h3>Welcome back Mr. {{username}}</h3>
+    <h4>First Name : {{first_name}}</h4>
+    <h4>Email : {{email}}</h4>
+    <h4>Last Login : {{last_login}}</h4>
+    <h4>Date of Join : {{date_joined}}</h4>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+
+  </body>
+  {% endblock %}
+</html>
