@@ -93,7 +93,7 @@ views.py
 jinja 2 template call variable data in {{}} format, it also use flow control as well as conditional statements using {}.
 
 Now open demo.html file
-<pre><!DOCTYPE html>
+```<!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en" dir="ltr">
   <head>
@@ -103,7 +103,8 @@ Now open demo.html file
   <body>
     <h1>User name is : {{name}}</h1>
   </body>
-</html></pre>
+</htm>
+```
 Now our function, HTML page are ready now we need to create a separate URL for this HTML page so we need to edit urls.py of our project.
 
 urls.py
