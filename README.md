@@ -103,7 +103,7 @@ Now open demo.html file
   <body>
     <h1>User name is : {{name}}</h1>
   </body>
-</htm>
+</html>
 ```
 Now our function, HTML page are ready now we need to create a separate URL for this HTML page so we need to edit urls.py of our project.
 
